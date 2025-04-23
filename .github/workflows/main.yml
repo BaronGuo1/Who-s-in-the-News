@@ -17,9 +17,9 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Install Papermill and Kernel
+    - name: Install Required Python Packages
       run: |
-        pip install papermill ipykernel
+        pip install papermill ipykernel pandas pymongo sqlalchemy psycopg2
 
     - name: Run notebook
       run: |
